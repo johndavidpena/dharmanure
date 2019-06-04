@@ -1,0 +1,26 @@
+.nav {
+  background: hsl(0,0%,30%);
+  padding: 0.75rem;
+}
+
+.ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.li {
+  list-style-type: none;
+}
+
+.anchor {
+  color: hsl(0,0%,99%);
+  text-decoration: none;
+}
+
+.anchor:hover {
+  color: hsl(0,0%,80%);
+}
+
+.active {
+  color: hsl(0,0%,65%);
+}

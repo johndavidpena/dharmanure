@@ -1,0 +1,20 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+
+  color: hsl(0,0%,99%);
+  background: hsl(0,0%,30%);
+  padding: 2rem;
+}
+
+.anchor {
+  color: hsl(0,0%,99%);
+}
+
+.anchor:hover {
+  color: hsl(0,0%,75%);
+}
