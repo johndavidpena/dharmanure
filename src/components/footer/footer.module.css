@@ -1,20 +1,19 @@
 .footer {
-  position: absolute;
-  bottom: 0;
+  max-width: 750px;
   width: 100%;
+  margin-top: var(--size-4);
 
   display: flex;
   justify-content: space-between;
 
-  color: hsl(0,0%,99%);
-  background: hsl(0,0%,30%);
-  padding: 2rem;
+  color: var(--cyan-500);
+  padding: 0 var(--size-4);
 }
 
 .anchor {
-  color: hsl(0,0%,99%);
+  color: var(--cyan-500);
 }
 
 .anchor:hover {
-  color: hsl(0,0%,75%);
+  color: var(--cyan-700);
 }

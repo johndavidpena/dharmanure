@@ -6,13 +6,13 @@ import Header from '../header';
 import Footer from '../footer';
 
 const Layout = props => (
-  <>
+  <div className={layoutStyles.content}>
     <Header />
-    <main className={layoutStyles.content}>
+    <main>
       {props.children}
     </main>
     <Footer />
-  </>
+  </div>
 );
 
 export default Layout;
