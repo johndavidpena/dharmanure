@@ -5,7 +5,14 @@ header {
 .title {
   color: var(--red-vivid-400);
   font-size: var(--font-size-headline);
+  font-family: var(--default-serif);
   letter-spacing: -5px;
+}
+/* Less than 576px */
+@media only screen and (max-width: 576px) {
+  .title {
+    font-size: 4rem;
+  }
 }
 
 .nav {

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'dharmanure',
+    title: 'dhar·manure',
     author: 'John Pena'
   },
   plugins: [

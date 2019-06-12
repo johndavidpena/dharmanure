@@ -2,7 +2,7 @@ import React from 'react';
 import Head from '../components/head';
 
 import Layout from '../components/layout';
-import blogStyles from './blog.module.css';
+import blogStyles from '../styles/blog.module.css';
 
 import { Link, graphql, useStaticQuery } from 'gatsby';
 
@@ -34,7 +34,7 @@ const BlogPage = () => {
         {
           data.allContentfulBlogPost.edges.map((edge) => {
             return (
-              <li className={blogStyles.post}
+              <li className={blogStyles.posts}
                 key={edge.node.contentful_id}>
                 <Link to={`/blog/${edge.node.slug}`}>
                   <h2>{edge.node.title}</h2>

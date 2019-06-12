@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dharma {
+}
+
+.manure {
+}
+
+.title {
+  font-family: var(--default-serif);
+  font-size: var(--font-size-6);
+  color: var(--indigo-500);
+}
+
+.spelling {
+  font-family: var(--default-serif);
+  font-size: var(--font-size-4);
+  color: var(--indigo-300);
+}
+
+.noun {
+  font-size: var(--font-size-2);
+  color: var(--text-light);
+}
+
+.dharma p {
+
+}

@@ -1,13 +1,14 @@
+/* Styles for pages/blog.js */
 .posts {
   list-style-type: none;
   margin: 0;
 }
 
-.post {
+.posts {
   margin: var(--size-1) 0;
 }
 
-.post a {
+.posts a {
   background: var(--grey-100);
   color: var(--text-normal);
   display: block;
@@ -15,16 +16,25 @@
   text-decoration: none;
 }
 
-.post a:hover {
+.posts a:hover {
   background: var(--grey-200);
 }
 
-.post h2 {
+.posts h2 {
   margin-bottom: var(--size-1);
 }
 
-.post p {
+.posts p {
   color: var(--text-light);
   font-size: var(--font-size-3);
   font-style: italic;
+}
+
+/* Styles for templates/blog.js */
+.post > * {
+  margin: 1rem 0;
+}
+
+.post img {
+  width: 100%;
 }

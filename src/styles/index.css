@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Muli&display=swap');
+
 :root {
   --text-dark: hsl(0, 0%, 13%);
   --text-normal: hsl(0, 0%, 29%);
@@ -21,8 +23,8 @@
   --box-shadow-less: 0 2px 3px 0 hsla(0, 0%, 0%, 0.2);
   --inset-box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.08);
 
-  --default-sans: 'Avenir', 'Roboto', sans-serif;
-  --default-serif: 'Playfair Display', 'Roboto Slab', serif;
+  --default-sans: 'Muli', sans-serif;
+  --default-serif: 'Alegreya', serif;
 
   --font-size: 1.6rem;
 
@@ -400,11 +402,35 @@
 }
 
 html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-  /* 1rem = 10px */
-  /* font-size: 62.5%; */
+  line-height: 1.4;
   font-family: var(--default-sans);
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+@media only screen and (max-width: 576px) {
+  html {
+  font-size: 16px;
+  }
+}
+/* NOTE: The order seems to matter!! */
+/* If the width is 576px or MORE */
+@media only screen and (min-width: 36em) {
+  html {
+    font-size: 17px;
+  }
+}
+/* If the width is 768px or MORE */
+@media only screen and (min-width: 48em) {
+  html {
+    font-size: 18px;
+  }
+}
+/* If the width is 992px or MORE */
+@media only screen and (min-width: 62em) {
+  html {
+    font-size: 19px;
+  }
 }
 
 body {
