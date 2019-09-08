@@ -6,12 +6,14 @@ import Header from '../header';
 import Footer from '../footer';
 
 const Layout = props => (
-  <div className={layoutStyles.content}>
-    <Header />
-    <main>
-      {props.children}
-    </main>
-    <Footer />
+  <div className={layoutStyles.background}>
+    <div className={layoutStyles.content}>
+      <Header />
+      <main>
+        {props.children}
+      </main>
+      <Footer />
+    </div>
   </div>
 );
 

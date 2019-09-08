@@ -1,33 +1,42 @@
 /* Styles for pages/blog.js */
 .posts {
   list-style-type: none;
-  margin: 0;
-}
-
-.posts {
-  margin: var(--size-1) 0;
+  margin: var(--size-1);
 }
 
 .posts a {
-  background: var(--grey-100);
+  /* background: var(--grey-100); */
+  background-image: linear-gradient(to right, #FFE3E3, #E0FCFF);
+  border-radius: 3px;
   color: var(--text-normal);
-  display: block;
   padding: var(--size-1);
   text-decoration: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 .posts a:hover {
-  background: var(--grey-200);
+  /* background: var(--grey-200); */
+  background-image: linear-gradient(to right, #E0FCFF, #FFE3E3);
 }
 
 .posts h2 {
-  margin-bottom: var(--size-1);
+  /* margin-bottom: var(--size-1); */
 }
 
 .posts p {
   color: var(--text-light);
   font-size: var(--font-size-3);
   font-style: italic;
+}
+
+.posts a svg {
+  width: 4rem;
+  fill: var(--text-normal);
+  animation-name: spin;
+  animation-duration: 20000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 /* Styles for templates/blog.js */
@@ -37,4 +46,18 @@
 
 .post img {
   width: 100%;
+}
+
+.post p {
+  letter-spacing: 0.04rem;
+  line-height: 1.85rem;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

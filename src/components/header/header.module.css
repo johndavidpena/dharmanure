@@ -3,11 +3,16 @@ header {
 }
 
 .title {
-  color: var(--red-vivid-400);
   font-size: var(--font-size-headline);
   font-family: var(--default-serif);
   letter-spacing: -5px;
 }
+
+.title a {
+  text-decoration: none;
+  color: var(--red-vivid-400);
+}
+
 /* Less than 576px */
 @media only screen and (max-width: 576px) {
   .title {
@@ -16,7 +21,7 @@ header {
 }
 
 .nav {
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
 }
 
 .ul {
@@ -26,6 +31,8 @@ header {
 .li {
   list-style-type: none;
   padding-right: var(--size-2);
+  padding-top: 0.75rem;
+  border-top: 3px solid var(--cyan-600);
 }
 
 .icon {

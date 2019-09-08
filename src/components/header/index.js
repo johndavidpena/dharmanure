@@ -1,9 +1,6 @@
 import React from 'react';
 import headerStyles from './header.module.css';
-
 import { Link, graphql, useStaticQuery } from 'gatsby';
-
-import { FiHome } from "react-icons/fi";
 
 const Header = () => {
   const data = useStaticQuery(graphql`
@@ -18,17 +15,14 @@ const Header = () => {
 
   return (
     <header>
-      <h1 className={headerStyles.title}>{data.site.siteMetadata.title}</h1>
+      <h1 className={headerStyles.title}>
+        <Link to='/'>
+          {data.site.siteMetadata.title}
+        </Link>
+      </h1>
 
       <nav className={headerStyles.nav}>
         <ul className={headerStyles.ul}>
-          <li className={headerStyles.li}>
-            <Link to='/'
-              className={headerStyles.anchor}
-              activeClassName={headerStyles.active}>
-              <FiHome className={headerStyles.icon} />
-            </Link>
-          </li>
           <li className={headerStyles.li}>
             <Link to='/blog'
               className={headerStyles.anchor}

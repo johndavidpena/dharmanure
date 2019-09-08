@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: 'dhar·manure',
+    title: 'dharmanure',
     author: 'John Pena'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /assets/ // See below to configure properly
+        }
+      }
+    },
     {
       resolve: 'gatsby-source-contentful',
       options: {

@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from '../components/head';
-
 import Layout from '../components/layout';
 import blogStyles from '../styles/blog.module.css';
-
 import { Link, graphql, useStaticQuery } from 'gatsby';
+import Enso from '../assets/enso.svg';
+// import Icon from "./path/assets/enso.svg";
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +12,7 @@ const BlogPage = () => {
       allContentfulBlogPost (
         sort: {
           fields:publishedDate,
-          order:DESC
+          order:ASC
         }
       ) {
         edges {
@@ -37,8 +37,11 @@ const BlogPage = () => {
               <li className={blogStyles.posts}
                 key={edge.node.contentful_id}>
                 <Link to={`/blog/${edge.node.slug}`}>
-                  <h2>{edge.node.title}</h2>
-                  <p>{edge.node.publishedDate}</p>
+                  <div>
+                    <h2>{edge.node.title}</h2>
+                    <p>{edge.node.publishedDate}</p>
+                  </div>
+                  <Enso />
                 </Link>
               </li>
             );

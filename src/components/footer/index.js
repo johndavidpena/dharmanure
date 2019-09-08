@@ -18,6 +18,7 @@ const Footer = () => {
 
   return (
     <footer className={footerStyles.footer}>
+      {/* Ensō by john melven from the Noun Project */}
       <a href='https://twitter.com/@PocktHerc' target='_blank' className={footerStyles.anchor} rel="noopener noreferrer"><FiTwitter /></a>
       <a href='https://www.facebook.com/john.pena.9404' target='_blank' className={footerStyles.anchor} rel="noopener noreferrer"><FiFacebook /></a>
       <a href='https://www.linkedin.com/in/john-pena-9758a5133/' target='_blank' className={footerStyles.anchor} rel="noopener noreferrer"><FiLinkedin /></a>

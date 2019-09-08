@@ -1,12 +1,6 @@
 .container {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.dharma {
-}
-
-.manure {
+  flex-direction: column;
 }
 
 .title {
