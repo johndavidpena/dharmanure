@@ -32,7 +32,7 @@ header {
   list-style-type: none;
   padding-right: var(--size-2);
   padding-top: 0.75rem;
-  border-top: 3px solid var(--cyan-600);
+  border-top: 3px solid var(--indigo-300);
 }
 
 .icon {

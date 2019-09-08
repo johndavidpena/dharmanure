@@ -6,7 +6,7 @@
 
 .posts a {
   /* background: var(--grey-100); */
-  background-image: linear-gradient(to right, #FFE3E3, #E0FCFF);
+  background-image: linear-gradient(to right, #E0E8F9, #E0FCFF);
   border-radius: 3px;
   color: var(--text-normal);
   padding: var(--size-1);
@@ -17,7 +17,7 @@
 
 .posts a:hover {
   /* background: var(--grey-200); */
-  background-image: linear-gradient(to right, #E0FCFF, #FFE3E3);
+  background-image: linear-gradient(to right, #BED0F7, #BEF8FD);
 }
 
 .posts h2 {

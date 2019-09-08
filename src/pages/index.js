@@ -1,28 +1,23 @@
 import React from 'react';
 import Layout from '../components/layout';
 import Head from '../components/head';
-// import homeStyles from '../styles/home.module.css';
+import homeStyles from '../styles/home.module.css';
 
 const HomePage = () => (
   <Layout>
     <Head title='Home' />
 
-    {/* <section className={homeStyles.container}>
-      <div className={homeStyles.dhar}>
-        <h2 className={homeStyles.title}>dhar·ma</h2>
-        <h3 className={homeStyles.spelling}>ˈdärmə</h3>
-        <h4 className={homeStyles.noun}>noun</h4>
-        <p>an aspect of truth or reality.</p>
-      </div>
+    <div className={homeStyles.container}>
+      <p className={homeStyles.text}><span className={homeStyles.highlight}>dharma</span> can be defined as an aspect of truth or reality. I tend to think of it as life purpose and I seem to be continuously looking for it.</p>
+    </div>
 
-      <div className={homeStyles.nure}>
-        <h2 className={homeStyles.title}>ma·nure</h2>
-        <h3 className={homeStyles.spelling}>məˈn(y)o͝or</h3>
-        <h4 className={homeStyles.noun}>noun</h4>
+    <div className={homeStyles.container}>
+      <p className={homeStyles.text}><span className={homeStyles.highlight}>manure</span> refers to animal dung that is used to fertilize the land. Not the most pleasant term but a beautiful demonstration of something that nobody wants that serves a great purpose.</p>
+    </div>
 
-        <p>animal dung used for fertilizing land.</p>
-      </div>
-    </section> */}
+    <div className={homeStyles.container}>
+      <p className={homeStyles.text}>This simple word combination adequately reflects many moments in my life up to this point. Sometimes you live with purpose, sometimes you're stepping in it!</p>
+    </div>
   </Layout>
 );
 
