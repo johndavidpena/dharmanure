@@ -4,7 +4,6 @@ import Layout from '../components/layout';
 import blogStyles from '../styles/blog.module.css';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Enso from '../assets/enso.svg';
-// import Icon from "./path/assets/enso.svg";
 
 const BlogPage = () => {
   const data = useStaticQuery(graphql`

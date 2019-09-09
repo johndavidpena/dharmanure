@@ -14,8 +14,21 @@
   color: var(--indigo-300);
 }
 
+/* Less than 576px */
+@media only screen and (max-width: 576px) {
+  .highlight {
+  font-size: var(--font-size-4);
+  }
+}
+
 .text {
   font-size: var(--font-size-4);
   color: var(--text-light);
 }
 
+/* Less than 576px */
+@media only screen and (max-width: 576px) {
+  .text {
+  font-size: var(--font-size-3);
+  }
+}

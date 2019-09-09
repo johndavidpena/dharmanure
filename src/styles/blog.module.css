@@ -20,8 +20,11 @@
   background-image: linear-gradient(to right, #BED0F7, #BEF8FD);
 }
 
-.posts h2 {
-  /* margin-bottom: var(--size-1); */
+/* Less than 576px */
+@media only screen and (max-width: 576px) {
+  .posts h2 {
+    font-size: var(--font-size-3);
+  }
 }
 
 .posts p {
@@ -39,6 +42,13 @@
   animation-timing-function: linear;
 }
 
+/* Less than 576px */
+@media only screen and (max-width: 576px) {
+  .posts a svg {
+    width: 3rem;
+  }
+}
+
 /* Styles for templates/blog.js */
 .post > * {
   margin: 1rem 0;
@@ -51,6 +61,15 @@
 .post p {
   letter-spacing: 0.04rem;
   line-height: 1.85rem;
+}
+
+/* Less than 576px */
+@media only screen and (max-width: 576px) {
+  .post p {
+    font-size: var(--font-size-3);
+    letter-spacing: 0.03rem;
+    line-height: 1.6rem;
+  }
 }
 
 @keyframes spin {

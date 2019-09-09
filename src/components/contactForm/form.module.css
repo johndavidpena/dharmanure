@@ -21,7 +21,6 @@
 }
 
 input 				{
-  font-size: var(--default-font-size);
   padding:10px 10px 10px 5px;
   display:block;
   width:300px;
@@ -34,7 +33,6 @@ input:focus 		{ outline:none; }
 /* LABEL ======================================= */
 label 				 {
   color: var(--text-light);
-  font-size: var(--default-font-size);
   font-weight: normal;
   position: absolute;
   pointer-events: none;
@@ -113,11 +111,12 @@ button {
   width: 100%;
   cursor: pointer;
   outline: none;
+  border: 0;
   background-color: var(--red-vivid-300);
   padding: 1rem;
   border-radius: 3px;
 }
 
 button:hover {
-    background-color: var(--red-vivid-400);
+  background-color: var(--red-vivid-400);
 }

@@ -16,7 +16,7 @@ const HomePage = () => (
     </div>
 
     <div className={homeStyles.container}>
-      <p className={homeStyles.text}>This simple word combination adequately reflects many moments in my life up to this point. Sometimes you live with purpose, sometimes you're stepping in it!</p>
+      <p className={homeStyles.text}>This simple word combination adequately reflects many moments in my life up to this point. Sometimes you're living with purpose, sometimes you're stepping in it!</p>
     </div>
   </Layout>
 );

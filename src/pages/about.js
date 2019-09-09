@@ -8,7 +8,7 @@ const AboutPage = () => (
     <Head title='About' />
 
     <div className={homeStyles.container}>
-      <p className={homeStyles.text}>This site is an example of headless CMS and React. This particular site has been created with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, a "Blazing fast modern site generator for React."</p>
+      <p className={homeStyles.text}>This site is an example of headless CMS and React. This particular site has been created with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a>, a "blazing fast modern site generator for React."</p>
     </div>
 
     <div className={homeStyles.container}>
